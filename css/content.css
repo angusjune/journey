@@ -1,0 +1,156 @@
+/*============= content =============*/
+
+body {
+    height: 100%;
+    background: white;    
+}
+
+.fixed {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    height: 100%;
+    width: 300px;
+    border-right: 1px solid #CCC;
+}
+
+.fixed header {
+    position: absolute;
+    top: 0;
+    margin: -20px 0 0 -30px;
+    padding: 0 0 0 10px;
+    display: block;
+    height: 180px;
+    width: 180px;
+}
+
+.fixed .text {
+    margin: 205px 0 0 80px;
+}
+
+.fixed .text p {
+    margin: 0 0 10px 0;
+    color: #888;
+    width: 200px;
+    word-wrap: break-word;
+}
+
+.fixed aside {
+    position: absolute;
+    top: 200px;
+    font-style: italic;
+    font-family: 'Averia Serif Libre', cursive;
+    padding: 3px;
+    border-bottom: 2px solid black;
+}
+
+figure {
+    padding: 150px 100px 100px 420px;
+}
+
+figure a {
+    display: block;
+    margin-bottom: 20px;
+    width: 530px;
+}
+
+figure img {
+    box-shadow: 3px 3px 18px -6px #999;
+    border: 8px solid transparent;
+}
+
+figure img:hover {
+    box-shadow: 3px 3px 18px -6px #444;
+}
+
+#details {
+    position: fixed;
+    top: 250px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: url("../img/detail.gif") 0 50% no-repeat;
+    border-bottom: 1px solid #999;
+    text-indent: -99999px;
+}
+
+#modal {
+    display: none;
+    z-index: 999999;
+    width: 600px;
+    height: 250px;
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    margin: -125px 0 0 -300px;
+    overflow: hidden;
+    padding: 0;
+    background: rgba(17, 17, 17, .9);   
+}
+
+#modal figure {
+    position: absolute;
+    left: 35px;
+    top: 65px;
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    box-shadow: 0 0 16px -8px #111 !important;
+}
+
+#modal img {
+    border: none;
+    box-shadow: none !important;
+}
+
+#modal.inactive {
+    display: none;
+}
+
+#modal.active {
+    display: block;
+    top: 50%;
+}
+
+#modal ul {
+    list-style: none;
+    width: 500px;
+    margin: 80px 0 0 120px;
+} 
+
+#modal li {
+    float: left;
+    width: 200px;
+}
+
+#modal li h6 {
+    font-family: 'Lusitana', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#modal li p {
+    text-align: center;
+    color: white;
+}
+
+#go-back {
+    text-indent: -90000px;
+    position: fixed;
+    top: 5%;
+    right: 10px;
+    display: block;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    background: url("../img/arrow.gif") no-repeat bottom;
+}
+
+#go-back:hover {
+    background-position: top;
+}

@@ -1,0 +1,296 @@
+
+/*============= general =============*/
+body {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    -webkit-font-smoothing: antialiased;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+input {
+    outline: none;
+}
+
+article p {
+    font-family: inherit;
+    line-height: 18px;
+    font-size: 12px;
+    font-style: normal;
+}
+
+/*============= title =============*/
+
+.title header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px auto auto -420px;
+}
+
+.title header a {
+    border-bottom: 1px dashed;
+    color: inherit;
+    text-decoration: none; 
+}
+
+.title header a:hover {
+    border-bottom: 0;
+    
+}
+
+.title header p {
+    text-align: center;
+    margin: auto auto 15px auto;
+    color: #888;
+}
+
+.title header h1 {
+    font-family: 'Lusitana', serif;
+    font-size: 180px;
+    text-transform: uppercase;
+    line-height: 180px;
+    margin: auto auto 20px auto;
+    -webkit-text-stroke: 1px transparent;
+}
+
+.title hgroup h3 {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.title hgroup h4 {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.title hgroup h5 {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+
+.title hgroup h6 {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+#hints em {
+    width: 50px;
+    height: 35px;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    opacity: .5;
+    -moz-opacity: .5;
+    text-indent: -99999px;
+}
+
+#hints .keyboard {
+    background: url("../img/keyboard.png") center no-repeat;
+    
+}
+
+#hints .next {
+    background: url("../img/next.png") center no-repeat;
+    
+}
+
+._last header {
+    margin-top: -200px !important;
+}
+
+/*============= main =============*/
+
+#main {
+    background-image: url("../img/dots-bg.png");
+    min-height: 100%;
+}
+
+#main header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #f2fef2;
+    transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out; 
+}
+
+#main header.dark {
+    color: black !important;
+}
+
+#main header h2 {
+    font-family: 'Lusitana', serif;
+    text-transform: uppercase;
+    font-size: 2em;        
+}
+
+#main nav {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    background: rgba(0, 0, 0, .4);
+}
+
+#main nav #nav-wrapper {
+    float: right;
+}
+
+/*============= kwicks =============*/
+
+.kwicks a {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+.kwicks i {
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.3em;
+    display: block;
+    width: 80px;
+    text-align: left;
+    padding-left: 5px;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    background: white;
+    border-bottom: 2px solid #E14706;
+    color: #111;
+    opacity: .4;
+    -moz-opacity: .4;
+    transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+}
+
+.kwick-shadow {
+    background: url("../img/kwicks_shadow.png") repeat-y;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: inherit;
+    width: 15px;
+}
+
+#kwick1.active i, #kwick2.active i, #kwick3.active i, #kwick4.active i, #kwick5.active i {
+   opacity: 1;
+}
+
+.kwicks {
+    position: absolute;
+    right: 10%;
+}
+
+.kwicks li {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-left: 5px;
+}
+
+#kwick1 {
+    background: url("../img/spring/thumbnail.gif");
+}
+
+#kwick2 {
+    background: url("../img/time/thumbnail.gif");
+}
+
+#kwick3 {
+    background: url("../img/meow/thumbnail.gif");
+}
+
+#kwick4 {
+    background: url("../img/walker/thumbnail.gif");
+}
+
+#kwick5 {
+    background: url("../img/voidness/thumbnail.gif");
+}
+
+/*============= last =============*/
+
+.like-wrapper {
+    cursor: pointer;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    box-shadow: 0 0px 2px white, 0 1px rgba(255, 255, 255, 0.3) inset, 0 12px rgba(255, 255, 255, .45) inset, 0 10px 20px rgba(255, 255, 255, 0.65) inset, 0 -15px 30px rgba(255, 255, 255, 0.5) inset;
+    padding: 0.2em 0.2em 0.1em;
+    white-space: nowrap;
+    font-style: italic;
+    color: #666;
+    text-shadow: 1px 1px #eee;   
+}
+
+.like-wrapper:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.35);
+    color: #444;
+}
+
+#like-modal {
+    display: none;
+    z-index: 999999;
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    left: 50%;
+    top: 55%;
+    margin: -125px 0 0 -90px;
+    overflow: hidden;
+    padding: 0;
+    background: rgba(17, 17, 17, .9);
+}
+
+#like-modal ul {
+    list-style: none;
+    height: 100px;
+    margin: 55px auto auto auto;
+    padding: 0px;
+}
+
+#like-modal ul li {
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+
+#like-modal li h6 {
+    font-family: 'Lusitana', serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#like-modal .icon-wrapper {
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+#like-modal.inactive {
+    display: none;
+}
+
+#like-modal.active {
+    display: block;
+    top: 50%;
+}
