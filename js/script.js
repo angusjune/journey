@@ -21,11 +21,11 @@
  	 * backstretch
     */
 	var bs_images = [
-      	"../img/spring/bg.jpg", 	
-      	"../img/time/bg.jpg",
-      	"../img/meow/bg.jpg",
-      	"../img/walker/bg.jpg",
-      	"../img/voidness/bg.jpg"
+      	"img/spring/bg.jpg", 	
+      	"img/time/bg.jpg",
+      	"img/meow/bg.jpg",
+      	"img/walker/bg.jpg",
+      	"img/voidness/bg.jpg"
 	];
 
   	// preload images
